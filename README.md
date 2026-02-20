@@ -1,7 +1,23 @@
-# Distributed_File_System
-This project implements a simplified Distributed File System (DFS) using the C programming language and socket-based communication on Windows.
-The system follows a client–server architecture and consists of three main components: Client, NameNode, and DataNodes.
-Client: Provides a menu-driven interface to store, retrieve, and list files while coordinating with the NameNode and DataNodes.
-NameNode: Manages file metadata including file names, block mapping, and DataNode locations without storing actual data.
-DataNode: Stores file blocks in memory and serves client requests for data storage and retrieval with replication support.
-This project demonstrates core distributed system concepts such as metadata management,replication, client-server communication, and modular system design.
+# Distributed File System – Mini HDFS
+A mini distributed file system simulation developed in *C using socket programming*, inspired by the Hadoop HDFS architecture.  
+This project demonstrates client–server communication, metadata management, and data replication concepts.
+##  Features
+- Client–Server architecture using TCP sockets
+- File *Store, **Retrieve, and **List* operations
+- Data replication across multiple DataNodes
+- NameNode-based metadata management
+- Basic distributed system simulation
+## Technologies Used
+- C Programming
+- Winsock2 (Socket Programming)
+- TCP/IP Networking
+- Distributed Systems Concepts
+## Project Components
+- *Client* – Takes user input and communicates with nodes  
+- *NameNode* – Maintains file metadata and locations  
+- *DataNodes* – Store replicated file blocks  
+##  How to Run
+1. Start the NameNode server.
+2. Start DataNode servers.
+3. Run the Client program.
+4. Choose operations from the menu (Store / Retrieve / List).
